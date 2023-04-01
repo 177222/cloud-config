@@ -13,6 +13,7 @@ config:<br>
           clone-on-start: true<br>
 3.启动项添加@EnableConfigServer注解<br>
 ### Springcloud-serverboot 需要访问配置中心的微服务<br>
+1.添加依赖spring-cloud-config-client和spring-cloud-starter-bootstrap<br>
 1.将原本的配置文件改为bootstrap.yml<br>
 2.修改配置文件<br>
 spring:<br>
