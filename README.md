@@ -4,7 +4,7 @@
 config:<br>
    server:<br>
         git:<br>
-          uri: https://github.com/177222/cloud-config.git  #配置git服务地址<br>
+          uri: https://github.com/177222/cloud-config.git  #配置git服务地址或其他远程仓库<br>
           username: huo #配置git用户名<br>
           password: asasdd #配置git密码<br>
           search-paths:<br>
