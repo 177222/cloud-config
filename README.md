@@ -1,4 +1,4 @@
-# cloud-config 配置中心
+### cloud-config 配置中心
 1.导入spring-cloud-config-server依赖和spring-cloud-starter-netflix-eureka-client依赖
 2.配置yml文件
 config:
@@ -12,7 +12,7 @@ config:
           default-label: master # 使用的默认分支，默认为 master
           clone-on-start: true
 3.启动项添加@EnableConfigServer注解
-# Springcloud-serverboot 需要访问配置中心的微服务
+### Springcloud-serverboot 需要访问配置中心的微服务
 1.将原本的配置文件改为bootstrap.yml
 2.修改配置文件
 spring:
