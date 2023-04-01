@@ -2,7 +2,7 @@
 1.导入spring-cloud-config-server依赖和spring-cloud-starter-netflix-eureka-client依赖<br>
 2.配置yml文件<br>
 config:<br>
-      server:<br>
+   server:<br>
         git:<br>
           uri: https://github.com/177222/cloud-config.git  #配置git服务地址
           username: huo #配置git用户名
