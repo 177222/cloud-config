@@ -1,0 +1,25 @@
+server:
+  port: 9966
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/177222/cloud-config.git  #配置git服务地址
+          username: huo #配置git用户名
+          password: asasdd #配置git密码
+          search-paths:
+            - cloud-config  #仓库名
+          default-label: master # 使用的默认分支，默认为 master
+          clone-on-start: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
